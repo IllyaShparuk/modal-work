@@ -29,3 +29,14 @@ def text_diff(file1_path, file2_path):
 
     files_writer(os.path.join("..", "results", "same.txt"), common_lines)
     files_writer(os.path.join("..", "results", "diff.txt"), file1_unique + file2_unique)
+
+
+def main_module():
+    file1_path = os.path.join("..", "files_to_compare", "file1.txt")
+    file2_path = os.path.join("..", "files_to_compare", "file2.txt")
+
+    text_diff(file1_path, file2_path)
+
+
+if __name__ == "__main__":
+    main_module()
